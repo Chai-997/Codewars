@@ -14,8 +14,8 @@
 
 
 def first_non_repeating_letter(s):
-    uniq = [x for x in s.lower() if s.lower().count(x) == 1]
-    return "" if len(uniq) == 0 else s[list(s.lower()).index(uniq[0])]
+    uniq = [x for x in s if s.lower().count(x.lower()) == 1]
+    return uniq[0] if uniq else ""
 
 
 print(first_non_repeating_letter("sTreSS"))
