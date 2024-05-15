@@ -33,14 +33,11 @@
 # 252.8 people round down to 252 persons.
 
 def nb_year(p0, percent, aug, p):
-    print("Init:", p0, percent, aug, p)
     years = 0
     percent = 1 + (percent / 100)
     while p0 < p:
         p0 = int((p0 * percent) + aug)
-        print("Year:", years, p0)
         years += 1
-    print("Year", years, p0)
     return years
 
 print(nb_year(1000, 2, 50, 1214))
