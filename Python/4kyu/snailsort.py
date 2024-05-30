@@ -45,10 +45,6 @@ def snail(snail_map):
 
     return snail_map[0] if elems == 1 else sorted
 
-# print(snail([ [1,2,3],
-#               [8,9,4],
-#               [7,6,5]]))
-
 print(snail([ [1, 2, 3, 4],
               [12,13,14,5],
               [11,16,15,6],
