@@ -19,6 +19,7 @@
 //   toJadenCase(): string;
 // }
 // console.log("Hello there".toJadenCase());
+// updated
 String.prototype.toJadenCase = function () {
     return this.split(' ').map(function (w) { return w[0].toUpperCase() + w.substring(1); }).join(' ');
 };
